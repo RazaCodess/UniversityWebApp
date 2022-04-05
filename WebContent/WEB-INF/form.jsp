@@ -12,9 +12,12 @@
 <body>
 <form:errors path="form.*"/>
 
+<link rel="stylesheet" href="<spring:theme code='styleSheet'/>" type="text/css"/>
 Language : <a href="/firstMvcProject/welcome?language=en">English</a>
 |<a href="/firstMvcProject/welcome?language=es">Spanish</a>
 
+Theme : <a href="/firstMvcProject/welcome?siteTheme=green">Green</a>
+|<a href="/firstMvcProject/welcome?siteTheme=red">Red</a>
 
 <h2>${message}</h2>
 <h1>Student Register Form</h1>

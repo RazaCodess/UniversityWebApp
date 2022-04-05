@@ -8,6 +8,15 @@ import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
+
+@JsonIgnoreProperties({"last_name", "username"})
+@JsonPropertyOrder({"address","first_name"})
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Form {
 
 	
