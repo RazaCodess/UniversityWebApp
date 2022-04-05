@@ -18,7 +18,7 @@ public class Interceptor extends HandlerInterceptorAdapter {
 		int day = calendar.get(Calendar.DAY_OF_WEEK);
 		if(day == 4)
 		{
-			response.getWriter().write("fuck you man, come next day");
+			response.getWriter().write("nigga, come next day");
 			return false; 
 		}
 		return true;
